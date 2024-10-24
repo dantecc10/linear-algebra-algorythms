@@ -42,11 +42,11 @@ def f_printer_vectors(vectors):
         vector_str = "v" + str(i) + " = ("
         for k in range(len(vectors[i])):
             if k == len(vectors[i]) - 1:
-                vector_str += frc.formatted_fraction_val(vectors[i][k]) + ")"
+                vector_str += str(frc.fraction_val(vectors[i][k])) + ")"
             else:
-                vector_str += frc.formatted_fraction_val(vectors[i][k]) + ", "
+                vector_str += str(frc.fraction_val(vectors[i][k])) + ", "
         print(vector_str)
         print ("")
         
-f_printer_vectors(vectors_reader())
-
+#f_printer_vectors(vectors_reader())
+#read_vector()
